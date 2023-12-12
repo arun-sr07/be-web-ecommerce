@@ -41,14 +41,12 @@ var productSchema = new mongoose.Schema(
       default: 0,
       select:false,
     },
-    images:{
-        type:Array
-    },
-    color: {
-        type:String,
-        
-    },
-    tags: String,
+    images:[{
+      public_id:String,
+      url:String,
+    }],
+    color: [],
+    tags: [],
     ratings: [
       {
         star: Number,
