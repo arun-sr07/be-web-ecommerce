@@ -102,7 +102,7 @@ const createProduct = asyncHandler(async (req, res) => {
         //const getallProducts=await Product.where("category").equals(req.query.category);
         const product=await query;
         res.json(product)
-        res.json(getallProducts)
+        
     }
     catch(error){
         throw new Error(error)
